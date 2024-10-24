@@ -1,0 +1,20 @@
+// Importar o módulo FS
+// Abrir um arquivo .txt
+const fs = require("node:fs");
+
+// Console.log(fs)
+fs.readFile("./docs/index.html", "utf-8", function (err, arquivo) {
+  if (err) {
+    console.error("Erro: " + err);
+  } else {
+    //console.log(arquivo);
+    // console.log(arquivo.toString());
+
+    // const dados = JSON.parse(arquivo);
+    // console.log(dados.nome);
+    // console.log(dados.profissao);
+    // console.log(dados.idade);
+    console.log(arquivo); // Roda o arquivo cru
+  }
+});
+// Console.log(arquivo):
